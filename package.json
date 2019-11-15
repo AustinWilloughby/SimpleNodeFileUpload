@@ -1,0 +1,26 @@
+{
+  "name": "file-upload-test",
+  "version": "1.0.0",
+  "description": "A test of file upload for images.",
+  "main": "/src/app.js",
+  "scripts": {
+    "nodemon": "nodemon --watch ./src ./src/app.js",
+    "start": "node ./src/app.js",
+    "pretest": "",
+    "test": "echo \"tests complete\""
+  },
+  "author": "Austin Willoughby",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.6",
+    "mongoose": "^5.7.11",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "name": "file-upload-test",
+  "name": "file-upload",
   "version": "1.0.0",
-  "description": "A test of file upload for images.",
+  "description": "A example of file upload using express and mongodb.",
   "main": "/src/app.js",
   "scripts": {
     "nodemon": "nodemon --watch ./src ./src/app.js",

@@ -1,15 +1,16 @@
-// Import our controllers
+// Pull in our file controllers. If you are continuing from DomoMaker, you likely
+// have the import for the entire controllers folder. In that case, you want to make
+// sure your controllers/index.js is properly importing and exporting the files.js file.
 const file = require('./controllers/files.js');
 
-// Setup our router
 const router = (app) => {
-  // Images get uploaded using /upload
+  // Setup post requests to /upload.
   app.post('/upload', file.uploadFile);
 
-  // Images can be retrieved using /retrieve?name=THE_FILE_NAME_WITH_EXTENSION
+  // Setup get requests to /retrieve
   app.get('/retrieve', file.retrieveFile);
-  
-  // Host the upload page
+
+  // Setup get requests to the root for the index page.
   app.get('/', file.uploadPage);
 };
 

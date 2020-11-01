@@ -7,6 +7,10 @@
   <body>
     <html>
   <body>
+    <!-- Post form. Note that the encoding type is set to 'multipart/form-data'. You cannot
+    upload files using the standard form-urlencoded encoding type. Also note that because we
+    are using the default html form action, we have named out file sampleFile. This will become
+    relevant in our src/controllers/files.js when trying to access the file on the server. -->
     <form ref='uploadForm' 
       id='uploadForm' 
       action='/upload' 
@@ -16,6 +20,7 @@
         <input type='submit' value='Upload!' />
     </form> 
     
+    <!-- Get form. Just a standard GET request getting made with a query parameter of ?filename -->
     <form ref='retrieveForm' 
       id='retrieveForm' 
       action='/retrieve' 

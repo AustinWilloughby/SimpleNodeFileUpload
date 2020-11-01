@@ -2,11 +2,8 @@
 <html>
   <head>
     <title>Basic File Upload</title>
-    <script>
-    
-    </script>
   </head>
-
+    
   <body>
     <html>
   <body>
@@ -17,7 +14,16 @@
       encType="multipart/form-data">
         <input type="file" name="sampleFile" />
         <input type='submit' value='Upload!' />
-    </form>     
+    </form> 
+    
+    <form ref='retrieveForm' 
+      id='retrieveForm' 
+      action='/retrieve' 
+      method='get'>
+      <label for='fileName'>Retrieve File By Name: </label>
+      <input name='fileName' type='text' />
+      <input type='submit' value='Download!' />
+    </form>
   </body>
 </html>
   </body>
